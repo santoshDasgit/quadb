@@ -1,0 +1,136 @@
+/* NavBar  */
+nav{
+    background-color: #005e89;
+    height: 45px;
+}
+nav a{
+    text-decoration: none;
+    width: fit-content;
+}
+nav h5{
+    width: fit-content;
+}
+nav h5{
+   
+    line-height: 45px;
+    color: white;
+    padding: 0px 10px;
+}
+
+
+
+/* Base  */
+.base{
+    background-color: #222b30;
+    color: white;
+}
+
+.base .img-card{
+    text-decoration: none;
+    box-shadow: 0px 6px 22px #00000054;
+}
+.base .img-card .image {
+color: hsl(0, 100%, 50%);
+height: 300px;
+display: flex;
+text-align: center;
+align-items: center;
+}
+.base .img-card .image h4{
+    width: 100%;
+}
+
+
+
+/* Details  */
+.details .poster{
+    color: black;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+   
+}
+.details .poster img{
+    border-radius: 6px 6px 0px 0px;
+    object-fit: cover;
+    height: 395px;
+    width: 100%;
+}
+
+.details .poster .in-cine{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    border-radius: 0px 0px 6px 6px;
+    padding: 5px;
+}
+
+.details .poster .right{
+    display: flex;
+flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.details .poster .right h1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+}
+
+.details .about h3{
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    letter-spacing: .00735em;
+    text-transform: none;
+    -webkit-font-smoothing: auto;
+}
+
+.details .right .ticket-btn{
+    padding: 10px;
+    border: 1px solid rgb(248, 68, 100);
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 68, 100);
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 8px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+
+/* Responsive screen  */
+@media screen and (max-width:770px) {
+    .details .poster{
+        height: fit-content;
+    }
+    .details .poster img{
+        height: auto;
+        margin: 10px 0px;
+    }
+}
